@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start:dev": "next dev",
-    "start:prod": "next",
+    "start:prod": "serve ./out -p 8080",
     "build": "run-p -l build:*",
     "build:next": "next build && next export",
     "lint": "eslint --fix -c ./.eslintrc.json './src/**/*.{ts,tsx}'"
